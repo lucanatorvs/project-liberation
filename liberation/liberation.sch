@@ -1,4 +1,271 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "weather bender"
+Date "2019-11-15"
+Rev "0.1"
+Comp "HHS"
+Comment1 "Bob Swinkels"
+Comment2 "Luca van Straaten"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP32-WROOM-32D:ESP32-WROOM-32D U?
+U 1 1 5DCEDBE2
+P 4150 3150
+F 0 "U?" H 4150 4717 50  0000 C CNN
+F 1 "ESP32-WROOM-32D" H 4150 4626 50  0000 C CNN
+F 2 "MODULE_ESP32-WROOM-32D" H 4150 3150 50  0001 L BNN
+F 3 "Espressif Systems" H 4150 3150 50  0001 L BNN
+F 4 "None" H 4150 3150 50  0001 L BNN "Field4"
+F 5 "Module Espressif Systems" H 4150 3150 50  0001 L BNN "Field5"
+F 6 "Unavailable" H 4150 3150 50  0001 L BNN "Field6"
+F 7 "ESP32-WROOM-32D" H 4150 3150 50  0001 L BNN "Field7"
+F 8 "IC: SoC; GPIO, I2C, I2S, IR, SD, SDIO, SPI, UART; 2.7÷3.6VDC; 20dBm" H 4150 3150 50  0001 L BNN "Field8"
+	1    4150 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensor:BME280 U?
+U 1 1 5DCF0C74
+P 7650 2000
+F 0 "U?" H 7221 2046 50  0000 R CNN
+F 1 "BME280" H 7221 1955 50  0000 R CNN
+F 2 "Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering" H 9150 1550 50  0001 C CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280-DS002.pdf" H 7650 1800 50  0001 C CNN
+	1    7650 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Female serial
+U 1 1 5DCF2976
+P 10800 2300
+F 0 "serial" H 10828 2276 50  0000 L CNN
+F 1 "Conn_01x06_Female" H 10828 2185 50  0000 L CNN
+F 2 "" H 10800 2300 50  0001 C CNN
+F 3 "~" H 10800 2300 50  0001 C CNN
+	1    10800 2300
+	1    0    0    -1  
+$EndComp
+Text GLabel 9950 3850 0    50   Input ~ 0
+RXD
+Text GLabel 9950 3950 0    50   Input ~ 0
+TXD
+Text GLabel 9950 4050 0    50   Input ~ 0
+DTR
+Text GLabel 9950 4150 0    50   Input ~ 0
+RTS
+$Comp
+L power:GND #PWR?
+U 1 1 5DCF64FC
+P 9950 4350
+F 0 "#PWR?" H 9950 4100 50  0001 C CNN
+F 1 "GND" H 9955 4177 50  0000 C CNN
+F 2 "" H 9950 4350 50  0001 C CNN
+F 3 "" H 9950 4350 50  0001 C CNN
+	1    9950 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DCF691B
+P 4850 4450
+F 0 "#PWR?" H 4850 4200 50  0001 C CNN
+F 1 "GND" H 4855 4277 50  0000 C CNN
+F 2 "" H 4850 4450 50  0001 C CNN
+F 3 "" H 4850 4450 50  0001 C CNN
+	1    4850 4450
+	1    0    0    -1  
+$EndComp
+Text GLabel 3150 2750 0    50   Input ~ 0
+RXD
+Text GLabel 3150 2850 0    50   Input ~ 0
+TXD
+$Comp
+L Device:R R?
+U 1 1 5DCF7C7E
+P 3300 2850
+F 0 "R?" V 3400 2850 50  0000 C CNN
+F 1 "1K" V 3300 2850 50  0000 C CNN
+F 2 "" V 3230 2850 50  0001 C CNN
+F 3 "~" H 3300 2850 50  0001 C CNN
+	1    3300 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DCF7556
+P 3300 2750
+F 0 "R?" V 3200 2750 50  0000 C CNN
+F 1 "1K" V 3300 2750 50  0000 C CNN
+F 2 "" V 3230 2750 50  0001 C CNN
+F 3 "~" H 3300 2750 50  0001 C CNN
+	1    3300 2750
+	0    1    1    0   
+$EndComp
+Text GLabel 3450 2050 0    50   Input ~ 0
+RESET
+Text GLabel 1350 1450 0    50   Input ~ 0
+RESET
+$Comp
+L power:GND #PWR?
+U 1 1 5DCFA0A3
+P 1500 1750
+F 0 "#PWR?" H 1500 1500 50  0001 C CNN
+F 1 "GND" H 1505 1577 50  0000 C CNN
+F 2 "" H 1500 1750 50  0001 C CNN
+F 3 "" H 1500 1750 50  0001 C CNN
+	1    1500 1750
+	1    0    0    -1  
+$EndComp
+Text GLabel 1500 1150 1    50   Input ~ 0
+3v3
+$Comp
+L Device:C C?
+U 1 1 5DCFA733
+P 1500 1600
+F 0 "C?" H 1615 1646 50  0000 L CNN
+F 1 "1uf" H 1615 1555 50  0000 L CNN
+F 2 "" H 1538 1450 50  0001 C CNN
+F 3 "~" H 1500 1600 50  0001 C CNN
+	1    1500 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DCFB3DD
+P 1500 1300
+F 0 "R?" H 1570 1346 50  0000 L CNN
+F 1 "10K" H 1570 1255 50  0000 L CNN
+F 2 "" V 1430 1300 50  0001 C CNN
+F 3 "~" H 1500 1300 50  0001 C CNN
+	1    1500 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1450 1500 1450
+Connection ~ 1500 1450
+Text GLabel 4850 2050 2    50   Input ~ 0
+BOOT
+$Comp
+L Device:Battery BT?
+U 1 1 5DCFFBA2
+P 1300 4850
+F 0 "BT?" H 1408 4896 50  0000 L CNN
+F 1 "Battery" H 1408 4805 50  0000 L CNN
+F 2 "" V 1300 4910 50  0001 C CNN
+F 3 "~" V 1300 4910 50  0001 C CNN
+	1    1300 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DD00794
+P 1300 5050
+F 0 "#PWR?" H 1300 4800 50  0001 C CNN
+F 1 "GND" H 1305 4877 50  0000 C CNN
+F 2 "" H 1300 5050 50  0001 C CNN
+F 3 "" H 1300 5050 50  0001 C CNN
+	1    1300 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5DD00D81
+P 1300 4450
+F 0 "SW?" V 1346 4362 50  0000 R CNN
+F 1 "MHS122" V 1255 4362 50  0000 R CNN
+F 2 "" H 1300 4450 50  0001 C CNN
+F 3 "~" H 1300 4450 50  0001 C CNN
+	1    1300 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5DD0428B
+P 5950 2750
+F 0 "SW?" V 5904 2898 50  0000 L CNN
+F 1 "FSM4JAH" V 5995 2898 50  0000 L CNN
+F 2 "" H 5950 2950 50  0001 C CNN
+F 3 "~" H 5950 2950 50  0001 C CNN
+	1    5950 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DD05738
+P 5950 3100
+F 0 "R?" H 6020 3146 50  0000 L CNN
+F 1 "R" H 6020 3055 50  0000 L CNN
+F 2 "" V 5880 3100 50  0001 C CNN
+F 3 "~" H 5950 3100 50  0001 C CNN
+	1    5950 3100
+	1    0    0    -1  
+$EndComp
+Text GLabel 5750 2950 0    50   Input ~ 0
+RECONF
+Wire Wire Line
+	5950 2950 5750 2950
+Connection ~ 5950 2950
+$Comp
+L power:GND #PWR?
+U 1 1 5DD069E7
+P 5950 3250
+F 0 "#PWR?" H 5950 3000 50  0001 C CNN
+F 1 "GND" H 5955 3077 50  0000 C CNN
+F 2 "" H 5950 3250 50  0001 C CNN
+F 3 "" H 5950 3250 50  0001 C CNN
+	1    5950 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5DD07351
+P 5950 2550
+F 0 "#PWR?" H 5950 2400 50  0001 C CNN
+F 1 "+3.3V" H 5965 2723 50  0000 C CNN
+F 2 "" H 5950 2550 50  0001 C CNN
+F 3 "" H 5950 2550 50  0001 C CNN
+	1    5950 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5DD07B08
+P 4850 1850
+F 0 "#PWR?" H 4850 1700 50  0001 C CNN
+F 1 "+3.3V" H 4865 2023 50  0000 C CNN
+F 2 "" H 4850 1850 50  0001 C CNN
+F 3 "" H 4850 1850 50  0001 C CNN
+	1    4850 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5DD08266
+P 9950 3750
+F 0 "#PWR?" H 9950 3600 50  0001 C CNN
+F 1 "+3.3V" H 9965 3923 50  0000 C CNN
+F 2 "" H 9950 3750 50  0001 C CNN
+F 3 "" H 9950 3750 50  0001 C CNN
+	1    9950 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x07_Female J?
+U 1 1 5DD09076
+P 10150 4050
+F 0 "J?" H 10178 4076 50  0000 L CNN
+F 1 "Conn_01x07_Female" H 10178 3985 50  0000 L CNN
+F 2 "" H 10150 4050 50  0001 C CNN
+F 3 "~" H 10150 4050 50  0001 C CNN
+	1    10150 4050
+	1    0    0    -1  
+$EndComp
+Text GLabel 9950 4250 0    50   Input ~ 0
+CTS
 $EndSCHEMATC

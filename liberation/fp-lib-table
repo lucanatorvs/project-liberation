@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name ESP32-WROOM-32D)(type Legacy)(uri ${KIPRJMOD}/libs/ESP32-WROOM-32D/ESP32-WROOM-32D.mod)(options "")(descr ""))
+  (lib (name BME280)(type Legacy)(uri ${KIPRJMOD}/libs/BME280/BME280.mod)(options "")(descr ""))
+)
