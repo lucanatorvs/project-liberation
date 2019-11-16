@@ -4,6 +4,10 @@ de meet-data naar het Britse meteorologisch instituut
 ([MetOffice](https://www.metoffice.gov.uk/)) communiceert zodat deze beschikbaar
 worden in de [WOW-NL](https://wow.knmi.nl/) database van de KNMI.
 
+## flashing the esp
+Use a 'USB to serial' programer and conect the pins: 3v3, GND, RXD, TXD, DTR and RTS. Remember that the RX on the programer sould go to the TX on the esp and so the pcb, and visvers.
+In arduino, open the scetch and select the port of youre programer. If all the drivers are installed. you sould be able to flach the esp
+
 ## Keeping our logs clean
 Please read this and keep it in mind when writing commit messages:
 [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
