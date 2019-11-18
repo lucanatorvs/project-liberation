@@ -607,4 +607,6 @@ Text Notes 4500 3050 2    50   ~ 0
 Sensor\n
 Text Notes 4200 5750 2    50   ~ 0
 Liniar voltige regulator
+Text GLabel 9800 4000 2    50   Input ~ 0
+RECONF
 $EndSCHEMATC
