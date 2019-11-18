@@ -41,17 +41,6 @@ F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280-D
 	1    5500 2700
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x06_Female serial
-U 1 1 5DCF2976
-P 6700 1100
-F 0 "serial" H 6728 1076 50  0000 L CNN
-F 1 "Conn_01x06_Female" H 6728 985 50  0000 L CNN
-F 2 "" H 6700 1100 50  0001 C CNN
-F 3 "~" H 6700 1100 50  0001 C CNN
-	1    6700 1100
-	1    0    0    -1  
-$EndComp
 Text GLabel 6500 1000 0    50   Input ~ 0
 RXD
 Text GLabel 6500 1100 0    50   Input ~ 0
@@ -301,7 +290,7 @@ L Transistor_BJT:BC547 Q?
 U 1 1 5DCF46FB
 P 1600 3200
 F 0 "Q?" H 1791 3246 50  0000 L CNN
-F 1 "BC547" H 1791 3155 50  0000 L CNN
+F 1 "BC547BTA" H 1791 3155 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 1800 3125 50  0001 L CIN
 F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 1600 3200 50  0001 L CNN
 	1    1600 3200
@@ -312,7 +301,7 @@ L Transistor_BJT:BC547 Q?
 U 1 1 5DCF3487
 P 1600 2500
 F 0 "Q?" H 1791 2546 50  0000 L CNN
-F 1 "BC547" H 1791 2455 50  0000 L CNN
+F 1 "BC547BTA" H 1791 2455 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 1800 2425 50  0001 L CIN
 F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 1600 2500 50  0001 L CNN
 	1    1600 2500
@@ -488,4 +477,102 @@ Wire Wire Line
 	5150 850  5250 850 
 Text GLabel 6100 2800 2    50   Input ~ 0
 SDA
+$Comp
+L Regulator_Linear:MCP1825S U?
+U 1 1 5DD80B21
+P 2050 6550
+F 0 "U?" H 2050 6792 50  0000 C CNN
+F 1 "NJU7223F33" H 2050 6701 50  0000 C CNN
+F 2 "" H 1950 6700 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/22056b.pdf" H 2050 6800 50  0001 C CNN
+	1    2050 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  6550 1450 6550
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5DD823F0
+P 2900 6550
+F 0 "#PWR?" H 2900 6400 50  0001 C CNN
+F 1 "+3.3V" H 2915 6723 50  0000 C CNN
+F 2 "" H 2900 6550 50  0001 C CNN
+F 3 "" H 2900 6550 50  0001 C CNN
+	1    2900 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DD82D83
+P 1450 6700
+F 0 "C?" H 1565 6746 50  0000 L CNN
+F 1 "100n" H 1565 6655 50  0000 L CNN
+F 2 "" H 1488 6550 50  0001 C CNN
+F 3 "~" H 1450 6700 50  0001 C CNN
+	1    1450 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DD8579B
+P 2500 6700
+F 0 "C?" H 2615 6746 50  0000 L CNN
+F 1 "100n" H 2615 6655 50  0000 L CNN
+F 2 "" H 2538 6550 50  0001 C CNN
+F 3 "~" H 2500 6700 50  0001 C CNN
+	1    2500 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DD86141
+P 1450 6850
+F 0 "#PWR?" H 1450 6600 50  0001 C CNN
+F 1 "GND" H 1455 6677 50  0000 C CNN
+F 2 "" H 1450 6850 50  0001 C CNN
+F 3 "" H 1450 6850 50  0001 C CNN
+	1    1450 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DD864EB
+P 2050 6850
+F 0 "#PWR?" H 2050 6600 50  0001 C CNN
+F 1 "GND" H 2055 6677 50  0000 C CNN
+F 2 "" H 2050 6850 50  0001 C CNN
+F 3 "" H 2050 6850 50  0001 C CNN
+	1    2050 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DD868EA
+P 2500 6850
+F 0 "#PWR?" H 2500 6600 50  0001 C CNN
+F 1 "GND" H 2505 6677 50  0000 C CNN
+F 2 "" H 2500 6850 50  0001 C CNN
+F 3 "" H 2500 6850 50  0001 C CNN
+	1    2500 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 6550 1750 6550
+Connection ~ 1450 6550
+Wire Wire Line
+	2350 6550 2500 6550
+Wire Wire Line
+	2500 6550 2900 6550
+Connection ~ 2500 6550
+$Comp
+L Connector:Conn_01x06_Male Jserial
+U 1 1 5DD8A7C9
+P 6700 1200
+F 0 "Jserial" H 6672 1082 50  0000 R CNN
+F 1 "Hedd_01x06_Male" H 6672 1173 50  0000 R CNN
+F 2 "" H 6700 1200 50  0001 C CNN
+F 3 "~" H 6700 1200 50  0001 C CNN
+	1    6700 1200
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
