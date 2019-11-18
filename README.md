@@ -5,8 +5,11 @@ de meet-data naar het Britse meteorologisch instituut
 worden in de [WOW-NL](https://wow.knmi.nl/) database van de KNMI.
 
 ## flashing the esp
-Use a 'USB to serial' programer and conect the pins: 3v3, GND, RXD, TXD, DTR and RTS. Remember that the RX on the programer sould go to the TX on the esp and so the pcb, and visvers.
-In arduino, open the scetch and select the port of youre programer. If all the drivers are installed. you sould be able to flach the esp
+Use a 'USB to serial' programer and conect the pins: 3v3, GND, RXD, TXD, DTR and RTS. 
+Remember that the RX on the programer sould go to the TX on the esp and so the pcb, and visversa.
+In arduino, open the scetch and select the port of youre programer.
+Install the esp32 boardmaniger by adding the url `https://dl.espressif.com/dl/package_esp32_index.json` to the "additional board maniger URLs" section in youre arduino settings.
+A list of the drivers is given and if all the drivers are installed, you sould be able to flach the esp.
 
 ## Keeping our logs clean
 Please read this and keep it in mind when writing commit messages:
