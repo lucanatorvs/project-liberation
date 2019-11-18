@@ -45,9 +45,9 @@ Text GLabel 9250 1400 0    50   Input ~ 0
 RXD
 Text GLabel 9250 1500 0    50   Input ~ 0
 TXD
-Text GLabel 9250 1600 0    50   Input ~ 0
-DTR
 Text GLabel 9250 1700 0    50   Input ~ 0
+DTR
+Text GLabel 9250 1600 0    50   Input ~ 0
 RTS
 $Comp
 L power:GND #PWR0101
