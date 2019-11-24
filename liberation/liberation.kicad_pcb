@@ -10,6 +10,15 @@
   )
 
   (page A4)
+  (title_block
+    (title "weather bender")
+    (date 2019-11-24)
+    (rev 1.0)
+    (company HHS)
+    (comment 1 "Bob Swinkels")
+    (comment 2 "Luca van Straaten")
+  )
+
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)
@@ -34,7 +43,7 @@
   )
 
   (setup
-    (last_trace_width 1)
+    (last_trace_width 0.25)
     (user_trace_width 0.5)
     (user_trace_width 1)
     (trace_clearance 0.2)
@@ -3414,17 +3423,17 @@
   (segment (start 131.22 113.03) (end 131.445 113.03) (width 0.25) (layer F.Cu) (net 9))
   (segment (start 116.45 106.5) (end 124.915 106.5) (width 0.25) (layer F.Cu) (net 9))
   (segment (start 124.915 106.5) (end 131.445 113.03) (width 0.25) (layer F.Cu) (net 9))
-  (segment (start 142.24 114.3) (end 135.255 114.3) (width 0.25) (layer F.Cu) (net 11) (tstamp 5DD303F8))
-  (segment (start 135.255 114.3) (end 131.445 114.3) (width 0.25) (layer F.Cu) (net 11))
   (segment (start 142.24 120.65) (end 135.255 120.65) (width 0.25) (layer F.Cu) (net 10) (tstamp 5DD303F2))
   (segment (start 135.255 120.65) (end 131.445 120.65) (width 0.25) (layer F.Cu) (net 10))
-  (segment (start 116.45 93.8) (end 121.74 93.8) (width 0.25) (layer F.Cu) (net 13))
-  (segment (start 121.74 93.8) (end 129.54 101.6) (width 0.25) (layer F.Cu) (net 13))
-  (segment (start 129.54 101.6) (end 142.24 101.6) (width 0.25) (layer F.Cu) (net 13))
+  (segment (start 142.24 114.3) (end 135.255 114.3) (width 0.25) (layer F.Cu) (net 11) (tstamp 5DD303F8))
+  (segment (start 135.255 114.3) (end 131.445 114.3) (width 0.25) (layer F.Cu) (net 11))
   (segment (start 141.250051 107.95) (end 142.24 107.95) (width 0.25) (layer F.Cu) (net 12))
   (segment (start 135.25359 107.95) (end 141.250051 107.95) (width 0.25) (layer F.Cu) (net 12))
   (segment (start 122.37359 95.07) (end 135.25359 107.95) (width 0.25) (layer F.Cu) (net 12))
   (segment (start 116.45 95.07) (end 122.37359 95.07) (width 0.25) (layer F.Cu) (net 12))
+  (segment (start 116.45 93.8) (end 121.74 93.8) (width 0.25) (layer F.Cu) (net 13))
+  (segment (start 121.74 93.8) (end 129.54 101.6) (width 0.25) (layer F.Cu) (net 13))
+  (segment (start 129.54 101.6) (end 142.24 101.6) (width 0.25) (layer F.Cu) (net 13))
   (segment (start 123.82641 95.25) (end 142.24 95.25) (width 0.25) (layer F.Cu) (net 14))
   (segment (start 121.58 93.00359) (end 123.82641 95.25) (width 0.25) (layer F.Cu) (net 14))
   (segment (start 121.58 92.465) (end 121.58 93.00359) (width 0.25) (layer F.Cu) (net 14))
