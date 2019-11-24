@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "weather bender"
-Date "2019-11-15"
-Rev "0.1"
+Date "2019-11-24"
+Rev "1.0"
 Comp "HHS"
 Comment1 "Bob Swinkels"
 Comment2 "Luca van Straaten"
