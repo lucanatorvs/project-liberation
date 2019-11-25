@@ -37,6 +37,8 @@ Now continu with the progressively larger components. after you are done soderin
 
 ![https://github.com/lucanatorvs/project-liberation](github.png)
 
+![](chicken.png)
+
 ![van: https://www.resistorguide.com/standards-and-codes/resistor-color-code/resistor_color_codes_chart/](resistor_color_codes_chart.png)
 
 \includepdf[page={1}]{schematic.pdf}
