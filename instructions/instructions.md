@@ -52,7 +52,7 @@ now fill in other relative information is aplicable.
 after you filed in all your info click accept.
 
 Now if you get the "Site Created!" message, your almost done! click "view sites" and in the colom "Search for Users Sites:" check out your new site. under the map is a code like "8b9cd787-930f-ea11-b265-0003ff5990ac", this is your site id, remember to copy it without the brackets but with the " - ".
-now turn on your WOW monitor sensor bord, and hold the button. hold it until a new wifi network is avalible, "WOW-MONITOR-****" klick it and you should be redirected to a website in wich you have to fill in the "site id" and the 6 digit number. 
+now turn on your WOW monitor sensor bord, and hold the button. hold it until a new wifi network is avalible, "WOW-MONITOR-****" klick it and you should be redirected to a website in wich you have to fill in the "site id" and the 6 digit number. then connect to your wifi network.
 
 ![http://wow.metoffice.gov.uk/sites](wow.qr)
 
